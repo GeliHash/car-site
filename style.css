@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Ancizar+Serif:ital,wght@0,300..900;1,300..900&family=UnifrakturCook:wght@700&display=swap');
+
+p{
+
+    text-align:center;
+    font-family: "UnifrakturCook", cursive;
+}
+
+.box1 {
+    background-color: aliceblue;
+    width: 100px;
+    height: 100px;
+/*  position: absolute;*/ /*50px from absolute parent*/
+/*  position: fixed;*/  /*ropx from absolute parent*/
+    position: sticky;  /*50px from relative parent*/
+    top: 50px;
+    z-index: -1; /*negative z-index*/
+}
+
+
+.box2 {
+    background-color: lightblue;
+    width: 200px;
+    height: 200px;
+    position:relative; /*50px from relative parent*/
+    top: 50px;
+}
+
+#txt-input:focus{
+    border:5 px solid blue;
+}
+h1:hover{
+    background-color: brown;
+    color: white;
+    text-align: center;
+}
+
+h1:active{
+    background-color: blue;
+    color: white;
+    text-align: right;
+}
+
+h1::selection{
+    background-color: purple;
+    color: white;
+}
+.container-add {
+    margin-bottom: 100px;
+}
+
+
+/*@media (max-width:400px){
+    body{
+        background-color: lightblue;
+    }
+}
+
+@media (min-width:500px){
+    body{
+        background-color: lightgreen;
+    }
+}*/
